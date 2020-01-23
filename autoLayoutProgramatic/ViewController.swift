@@ -76,12 +76,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         titles.translatesAutoresizingMaskIntoConstraints = false
         titles.text = "Learn Collection Views"
         titles.font = UIFont.systemFont(ofSize: 28, weight: .bold)
+        titles.textColor = .purple
         
         let description = UILabel()
         description.numberOfLines = 0
         description.translatesAutoresizingMaskIntoConstraints = false
-        description.text = "Today i'm learn to make collectionview and using autolayout, all in programatically a.k.a. without storyboard. I think this is good for me and i'll keep doing this. Goodluck guys !"
+        description.text = "Today i'm learn to make collectionView and using autoLayout, all in programatically a.k.a. without storyBoard. I think this is good for me and i'll keep doing this. Goodluck guys !"
         description.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        description.textColor = .darkGray
         
         let stack = UIStackView(arrangedSubviews: [titles, description])
         stack.translatesAutoresizingMaskIntoConstraints = false
