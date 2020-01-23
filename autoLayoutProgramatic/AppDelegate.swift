@@ -10,11 +10,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithDefaultBackground()
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+//        UINavigationBar.appearance().prefersLargeTitles = true
+//        let viewController = ViewController()
+//        viewController.title = "NSLayoutConstraint"
+//        
+//        window = UIWindow()
+//        window?.makeKeyAndVisible()
+//        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        
         return true
     }
 
